@@ -27,6 +27,23 @@
             <button class="header-number">
                 +998 99 033 99 38
             </button>
+            <div class="header-hamburger burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="mobile-menu" id="mobileMenu">
+                <img src="./images/logom.svg" alt="">
+                <img class="mobile-close" src="./images/close.svg" alt="">
+                <ul>
+                    <li><a href="#about">Biz kimmiz?</a></li>
+                    <li><a href="#terms">Qo'shilish Shartlari</a></li>
+                    <li><a href="#price">Narxlar</a></li>
+                </ul>
+                <button class="header-number btn-mobile">
+                    +998 99 033 99 38
+                </button>
+            </div>
         </div>
         <div class="second-container">
             <div class="hero-text">
@@ -91,37 +108,40 @@
         </div>
     </section>
     <img class="paper-back" src="./images/paper.svg" alt="">
-    <div class="sign-up">
-        <div class="sign-up-title">
-            <p>Qo'shiling va o'z biznesingizni rivojlantiring!</p>
-        </div>
-        <div class="sign-up-form">
-            <div class="name">
-                <p>Ismingiz</p>
-                <input type="text" placeholder="Ismingizni kiriting">
+    <div class="sign-up-container">
+        <div class="sign-up">
+            <div class="sign-up-title">
+                <p>Qo'shiling va o'z biznesingizni rivojlantiring!</p>
             </div>
-            <div class="name">
-                <p>Telefon raqamingiz</p>
-                <input type="text" placeholder="+998">
+            <div class="sign-up-form">
+                <div class="name">
+                    <p>Ismingiz</p>
+                    <input type="text" placeholder="Ismingizni kiriting">
+                </div>
+                <div class="name">
+                    <p>Telefon raqamingiz</p>
+                    <input type="text" placeholder="+998">
+                </div>
+                <button>
+                    <p>Ariza topshirish</p>
+                    <img src="./images/signup.svg" alt="">
+                </button>
             </div>
-            <button>
-                <p>Ariza topshirish</p>
-                <img src="./images/signup.svg" alt="">
-            </button>
         </div>
     </div>
+
     <img class="paper-back2" src="./images/paper.svg" alt="">
     <section id="about">
         <div class="second-container">
-        <div class="about-us-card">
-            <div class="content">
-                <h2>Asoschilar Club –</h2>
-                <p>biznes va shaxsiy rivojlanishda o‘sishga intilayotgan tadbirkorlar va biznes rahbarlarini
-                    birlashtiruvchi yopiq hamjamiyat.</p>
+            <div class="about-us-card">
+                <div class="content">
+                    <h2>Asoschilar Club –</h2>
+                    <p>biznes va shaxsiy rivojlanishda o‘sishga intilayotgan tadbirkorlar va biznes rahbarlarini
+                        birlashtiruvchi yopiq hamjamiyat.</p>
+                </div>
+                <img src="./images/asoschilar.svg" alt="">
             </div>
-            <img src="./images/asoschilar.svg" alt="">
         </div>
-    </div>
     </section>
     <div class="statics">
         <div class="static-title">
@@ -238,7 +258,8 @@
         </div>
     </div>
     <section class="meeting">
-        <div class="meeting-title">
+       <div class="meeting-container">
+         <div class="meeting-title">
             <p>Uchrashuv tartibi:</p>
         </div>
         <div class="meeting-wrapper">
@@ -289,6 +310,7 @@
                 </div>
             </div>
         </div>
+       </div>
     </section>
     <div class="second-container">
         <div class="course">
@@ -400,7 +422,7 @@
             </div>
         </div>
     </div>
-        <img class="paper-back" src="./images/paper.svg" alt="">
+    <img class="paper-back" src="./images/paper.svg" alt="">
     <div class="sign-up">
         <div class="sign-up-title">
             <p>Qo'shiling va o'z biznesingizni rivojlantiring!</p>
@@ -434,11 +456,13 @@
                     <h4>t.me/asoschilarmanager</h4>
                 </div>
                 <span class="vertical-dashed-line"></span>
+                <span class="dashed-line"></span>
                 <div class="info-card">
                     <p>Telefon:</p>
                     <h4>+998 99 033 99 38</h4>
                 </div>
                 <span class="vertical-dashed-line"></span>
+                <span class="dashed-line"></span>
                 <div class="info-card">
                     <p>Email:</p>
                     <h4>abduqodir9938@gmail.com</h4>
@@ -456,6 +480,9 @@
             <p>+998 99 033 99 38</p>
         </div>
     </div>
+
+
+    <script src="./main.js"></script>
 </body>
 
 </html>

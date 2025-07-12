@@ -4,14 +4,16 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
+
 #about,
 #terms,
 #pricing {
-  scroll-margin-top: 100px; 
+    scroll-margin-top: 100px;
 }
+
 img {
     display: block;
     height: auto;
@@ -40,8 +42,13 @@ body {
     margin: 0 auto;
 }
 
-.third-container{
+.third-container {
     max-width: 1138px;
+    margin: 0 auto;
+}
+
+.sign-up-container {
+    max-width: 1024px;
     margin: 0 auto;
 }
 
@@ -59,6 +66,7 @@ body {
     align-items: center;
     list-style: none;
     gap: 36px;
+    height: 57.6px;
     border: 1px solid #262626;
     padding: 13px 29px;
     border-radius: 100px;
@@ -163,10 +171,10 @@ body {
 }
 
 .hero-menu-wrapper {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding: 20px;
 }
 
 .hero-menu-card {
@@ -221,10 +229,10 @@ body {
 
 
 .service-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 52px;
-  align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 52px;
+    align-items: center;
 }
 
 
@@ -258,20 +266,21 @@ body {
     background: linear-gradient(71.83deg, #fffff7 0, rgba(255, 255, 247, 0.34) 100%);
     color: transparent;
     background-clip: text;
-    width: 600px;
+    max-width: 600px;
     margin-bottom: 43px;
     font-family: Poppins;
     font-weight: 400;
 }
 
 .sign-up-form {
-    width: 984px;
     display: flex;
     align-items: end;
     gap: 32px;
+
 }
 
 .name {
+    width: 100%;
     font-family: Poppins;
     display: flex;
     flex-direction: column;
@@ -303,9 +312,11 @@ body {
     cursor: pointer;
     transition: 0.4s;
 }
-.sign-up-form > button:hover{
+
+.sign-up-form>button:hover {
     opacity: 0.8;
 }
+
 .sign-up-form>button>p {
     color: #000000;
     font-family: Poppins;
@@ -313,15 +324,18 @@ body {
     font-weight: 500;
     cursor: pointer;
 }
-.paper-back{
+
+.paper-back {
     position: absolute;
     left: -100px;
 }
-.paper-back2{
+
+.paper-back2 {
     position: absolute;
     right: -150px;
 }
-.about-us-card{
+
+.about-us-card {
     margin-top: 145px;
     font-family: Poppins;
     display: flex;
@@ -329,27 +343,35 @@ body {
     justify-content: space-between;
     margin-bottom: 146px;
 }
-.content > h2{
+
+.about-us-card>img {
+    max-width: 100%;
+}
+
+.content>h2 {
     font-size: 51px;
     font-weight: 600;
     margin-bottom: 36px;
     color: #CCCCCC;
 }
-.content > p{
+
+.content>p {
     color: #CCCCCC;
     font-size: 28px;
     font-weight: 400;
     line-height: 42px;
     letter-spacing: -1.1399999856948853px;
-    width: 500px;
+    max-width: 500px;
 }
-.statics{
+
+.statics {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 120px;
 }
-.static-title > p{
+
+.static-title>p {
     font-family: Poppins;
     font-size: 30px;
     letter-spacing: -1.3200000524520874px;
@@ -358,12 +380,14 @@ body {
     background-clip: text;
     color: transparent;
 }
-.number-static{
+
+.number-static {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.number-static > h3{
+
+.number-static>h3 {
     font-family: Poppins;
     font-size: 70px;
     font-weight: 400;
@@ -372,7 +396,8 @@ body {
     background-clip: text;
     color: transparent;
 }
-.number-static > p{
+
+.number-static>p {
     font-family: Inter;
     font-size: 20px;
     font-weight: 400;
@@ -380,17 +405,22 @@ body {
     letter-spacing: -0.20000000298023224px;
     color: #7a7a7a;
 }
-.static-results{
+
+.static-results {
     display: flex;
-    width: 970px;
+    max-width: 970px;
+    width: 100%;
     padding: 0 20px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
-.static2{
+
+.static2 {
     width: 200px;
     text-align: center;
 }
-.plans-title > p{
+
+.plans-title>p {
     font-family: Poppins;
     font-size: 30px;
     font-weight: 400;
@@ -402,35 +432,40 @@ body {
     color: transparent;
     text-align: center;
 }
-.plan-card{
+
+.plan-card {
     position: relative;
     width: 100%;
-    height:  297px;
+    height: 297px;
     border-radius: 24px;
     padding: 78px 30px 99px;
     color: #000000;
     background: linear-gradient(135deg, #FFFFFF, #D2D2D2);
     margin-bottom: 92px;
 }
-.plan-card > h3{
+
+.plan-card>h3 {
     font-family: Poppins;
     font-size: 45px;
     font-weight: 500;
     line-height: 60px;
     text-align: center;
 }
-.planimg{
+
+.planimg {
     position: absolute;
     bottom: -34px;
     right: -129px;
 }
-.about-club-title > p{
+
+.about-club-title>p {
     font-family: Poppins;
     font-size: 30px;
     margin-bottom: 80px;
     text-align: center;
 }
-.about-club-card{
+
+.about-club-card {
     font-family: Poppins;
     padding: 0 25px 0 28px;
     border-radius: 24px;
@@ -438,51 +473,63 @@ body {
     gap: 24px;
     align-items: center;
     background-color: white;
-    width: 508px;
+    max-width: 100%;
     height: auto;
 }
-.about-club-card > b{
+
+.about-club-card>b {
     font-size: 120px;
     font-weight: 500;
     color: #CCCCCC;
 }
-.about-club-card > p{
+
+.about-club-card>p {
     font-size: 20px;
     font-weight: 400;
     line-height: 26px;
     text-align: left;
     color: #000;
 }
-.line-1{
+
+.line-1 {
     display: flex;
     flex-direction: column;
     gap: 28px;
 }
-.about-club-wrapper{
+
+.about-club-wrapper {
     display: flex;
     justify-content: space-between;
     margin-bottom: 109px;
+    width: 100%;
+    padding: 0 20px;
+    gap: 28px 82px;
 }
-.requirement-title{
+
+.requirement-title {
     font-family: Poppins;
 }
-.requirement-title > h3{
+
+.requirement-title>h3 {
     font-size: 44px;
     font-weight: 400;
     text-align: center;
     margin-bottom: 53px;
 }
-.requirement-title > p{
+
+.requirement-title>p {
     font-size: 30px;
     font-weight: 400;
     text-align: center;
     margin-bottom: 40px;
 }
-.requirement-card{
+
+.requirement-card {
     display: flex;
     align-items: center;
     gap: 16px;
-    width: 326px;
+    max-width: 326px;
+    width: 100%;
     height: 162px;
     padding: 30px 16px;
     border: 1px solid #262626;
@@ -490,21 +537,32 @@ body {
     border-radius: 30px;
     font-family: Poppins;
 }
-.requirement-card > p{
+
+.requirement-card>p {
     font-size: 20px;
     font-weight: 400;
 }
-.requirement-wrapper{
+
+.requirement-wrapper {
     display: flex;
     gap: 52px;
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 92px;
 }
-.card2{
-    width: 382px ;
+
+.card2 {
+    width: 382px;
 }
-.meeting{
+
+.meeting-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.meeting {
     background-color: white;
     width: 100%;
     color: black;
@@ -513,7 +571,8 @@ body {
     align-items: center;
     padding-top: 87px;
 }
-.meeting-title{
+
+.meeting-title {
     font-family: inter;
     font-size: 30px;
     font-weight: 400;
@@ -524,45 +583,53 @@ body {
     -webkit-background-clip: text;
     color: transparent;
 }
-.meeting-card{
+
+.meeting-card {
     font-family: Poppins;
     display: flex;
     align-items: center;
     gap: 22px;
 }
-.meeting-card > p{
+
+.meeting-card>p {
     font-size: 22px;
     font-weight: 400;
-    width: 500px;
+    max-width: 500px;
     line-height: 26px;
 }
-.meeting-card > p > b{
+
+.meeting-card>p>b {
     font-family: inter !important;
 }
-.meeting-line{
+
+.meeting-line {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-.meeting-wrapper{
+
+.meeting-wrapper {
     display: flex;
     justify-content: space-between;
     padding-bottom: 120px;
 }
-.course{
+
+.course {
     padding-top: 37px;
     font-family: Poppins;
 }
-.course-title{
+
+.course-title {
     text-align: center;
     color: #CCCCCC;
     font-size: 30px;
     font-weight: 400;
     margin-bottom: 41px;
 }
-.course-card{
+
+.course-card {
     width: 100%;
-    height: 231px;
+    height: 100%;
     background-color: white;
     border: 2px solid #858585;
     border-radius: 24px;
@@ -576,22 +643,27 @@ body {
     justify-content: space-between;
     margin-bottom: 158px;
 }
-.course-card1 > p{
+
+.course-card1>p {
     margin-top: 16px;
     width: 270px;
 }
-.course-text{
+
+.course-text {
     width: 150px !important;
 }
-.course-text1{
+
+.course-text1 {
     width: 170px !important;
 }
-.price{
+
+.price {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.price-title > h3{
+
+.price-title>h3 {
     font-family: Poppins;
     font-size: 44px;
     margin-bottom: 70px;
@@ -600,7 +672,8 @@ body {
     color: transparent;
     text-align: center;
 }
-.price-title > p{
+
+.price-title>p {
     font-family: Poppins;
     font-size: 30px;
     background: linear-gradient(79.97deg, #fffff7 0, rgba(255, 255, 247, 0.34) 100%);
@@ -610,7 +683,8 @@ body {
     color: transparent;
     margin: 0;
 }
-.price-title > h2{
+
+.price-title>h2 {
     font-family: Poppins;
     font-size: 115px;
     background: linear-gradient(79.97deg, #fffff7 0, rgba(255, 255, 247, 0.34) 100%);
@@ -620,10 +694,12 @@ body {
     color: transparent;
     font-weight: 500;
 }
-.price-title > img{
+
+.price-title>img {
     margin-bottom: 60px;
 }
-.card-price{
+
+.card-price {
     position: relative;
     font-family: Poppins;
     border: 1px solid #262626;
@@ -631,7 +707,8 @@ body {
     border-radius: 30px;
     background-color: #303030;
 }
-.card-price::after{
+
+.card-price::after {
     content: '3';
     position: absolute;
     font-weight: 600;
@@ -642,27 +719,31 @@ body {
     display: inline-block;
     opacity: 5%;
 }
-.card-price > h2{
+
+.card-price>h2 {
     font-size: 38px;
     font-weight: 600;
     margin-bottom: 10px;
     color: #CCCCCC;
 }
-.card-price > h3{
+
+.card-price>h3 {
     font-size: 30px;
     font-weight: 400;
     color: #CCCCCC;
     text-align: center;
 }
-.price-month{
-display: grid;
-grid-template-columns: 1fr auto 1fr; 
-align-items: center;
-gap: 40px;
-width: 100%;
-margin-bottom: 123px;
+
+.price-month {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    margin-bottom: 123px;
 }
-.price-2::after{
+
+.price-2::after {
     content: '6';
     position: absolute;
     font-weight: 600;
@@ -673,13 +754,16 @@ margin-bottom: 123px;
     display: inline-block;
     opacity: 5%;
 }
-.price-2{
+
+.price-2 {
     background-color: #1B1B1B;
 }
-.price-3{
+
+.price-3 {
     background-color: #121212;
 }
-.price-3::after{
+
+.price-3::after {
     content: '12';
     position: absolute;
     font-weight: 600;
@@ -690,7 +774,8 @@ margin-bottom: 123px;
     display: inline-block;
     opacity: 5%;
 }
-.club-members-title{
+
+.club-members-title {
     font-family: Poppins;
     font-size: 30px;
     text-align: center;
@@ -699,84 +784,99 @@ margin-bottom: 123px;
     color: transparent;
     background-clip: text;
 }
-.club-member{
+
+.club-member {
     font-family: Poppins;
     display: inline-block;
     padding: 15px 16px 22px 15px;
     background-color: #1B1B1B;
     border-radius: 30px;
     border: 1px solid #262626;
+    width: 100%;
+    max-width: 256px;
 }
-.club-member > h4{
+
+.club-member>h4 {
     margin-top: 18px;
     margin-bottom: 7px;
     font-size: 20px;
     font-weight: 500;
 }
-.club-member > p{
+
+.club-member>p {
     font-size: 13px;
     color: #CCCCCC;
 }
-.club-members-wrapper{
+
+.club-members-wrapper {
     display: flex;
     align-items: center;
     gap: 34px;
     flex-wrap: wrap;
 }
-.club-members-wrapper > h3{
+
+.club-members-wrapper>h3 {
     color: #CCCCCC;
     font-weight: 500;
     font-size: 120px;
     font-family: Poppins;
 }
-.faq{
+
+.faq {
     margin-top: 127px;
     background: linear-gradient(135deg, #1A1A1A, #0D0D0D);
     width: 100%;
-    height: 350px;
+    height: 100%;
     border-radius: 24px;
     padding: 62px 48px 64px 48px;
     font-family: Poppins;
     margin-bottom: 59px;
 }
-.faq-title > h2{
+
+.faq-title>h2 {
     color: #CCCCCC;
     font-size: 54px;
     font-weight: 500;
     text-align: center;
 }
-.faq-title > h3{
+
+.faq-title>h3 {
     color: #CCCCCC;
     font-size: 45px;
     font-weight: 500;
     text-align: center;
     margin-bottom: 23px;
 }
-.faq-info{
+
+.faq-info {
     background-color: white;
     width: 100%;
-    height: 91px;
+    height: 100%;
     border-radius: 22px;
     padding: 19px 63px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.info-card > p{
+
+.info-card>p {
     color: #CCCCCC;
 }
-.info-card > h4{
+
+.info-card>h4 {
     color: #000000;
     font-size: 18px;
     font-weight: 500;
 }
+
 .vertical-dashed-line {
-  display: inline-block;
-  width: 2px;
-  height: 65px;
-  border-left: 2px dashed #c1c1c1;
+    display: inline-block;
+    width: 2px;
+    height: 65px;
+    border-left: 2px dashed #c1c1c1;
 }
-.footer-container{
+
+.footer-container {
     max-width: 1350px;
     margin: 0 auto;
     font-family: inter;
@@ -784,9 +884,471 @@ margin-bottom: 123px;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 40px;
+    
 }
-.social-media{
+
+.social-media {
     display: flex;
     gap: 16px;
     align-items: center;
+}
+
+.header-hamburger {
+    width: 48px;
+    height: 48px;
+    border: 2px solid #111;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #F0F0F0;
+    cursor: pointer;
+}
+
+.header-hamburger>span {
+    height: 4px;
+    width: 25px;
+    background-color: #000;
+    border-radius: 2px;
+    display: block;
+}
+
+.burger {
+    display: none;
+}
+
+.mobile-menu {
+    font-family: Poppins;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    padding: 70px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.mobile-menu>img {
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+.mobile-close {
+    position: absolute;
+    right: 30px;
+    top: 70px;
+    filter: brightness(0) invert(1);
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.btn-mobile {
+    display: flex !important;
+    margin: 0 auto;
+    margin-top: 250px;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu ul li {
+    margin-bottom: 20px;
+}
+
+.dashed-line {
+    display: none;
+}
+
+.mobile-menu ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+}
+
+
+.mobile-menu.active {
+    left: 0;
+}
+
+@media(max-width:1420px) {
+    .paper-back {
+        display: none;
+    }
+
+    .paper-back2 {
+        display: none;
+    }
+    .footer-container{
+        padding: 0 20px;
+    }
+}
+
+@media(max-width:1200px) {
+    .meeting-wrapper {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .meeting-card {
+        align-items: start;
+    }
+
+    .meeting-card>p {
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    .club-members-wrapper {
+        padding: 0 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media(max-width:1155px) {
+    .about-club-wrapper {
+        gap: 28px 82px;
+    }
+
+    .card-price>h2 {
+        font-size: 30px;
+    }
+
+    .card-price>h3 {
+        font-size: 25px;
+    }
+
+    .price-month {
+        padding: 0 20px;
+    }
+}
+
+@media(max-width:1005px) {
+    .price-month {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media(max-width:965px) {
+    .name>input {
+        width: 250px;
+    }
+
+    .about-club-card>p {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    .faq-info {
+        flex-direction: column;
+    }
+
+    .vertical-dashed-line {
+        display: none;
+    }
+
+.dashed-line {
+  display: inline;
+  width: 100%;
+  height: 2px;
+  border-top: 2px dashed #c1c1c1;
+}
+.faq-info{
+    gap: 15px;
+    align-items: start;
+    padding: 20px 40px;
+}
+
+}
+
+@media(max-width:860px) {
+    .sign-up-form>button {
+        width: 200px;
+    }
+
+    .sign-up-form>button {
+        gap: 20px;
+    }
+
+    .sign-up-form>button>p {
+        font-size: 16px;
+    }
+
+    .sign-up-form>button>img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .about-club-wrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about-club-card {
+        width: 100%;
+    }
+}
+
+@media(max-width:920px) {
+    .hero-menu-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 47px 30px;
+    }
+
+    .hero-menu-card {
+        height: 255px;
+    }
+
+    .service-cards {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 ustun */
+    }
+}
+
+@media(max-width:900px) {
+    .statics {
+        padding-top: 38px;
+    }
+
+    .about-us-card {
+        flex-direction: column-reverse;
+        gap: 32px;
+        margin-bottom: 34px;
+    }
+
+    .content>h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .content>p {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+}
+
+@media(max-width:815px) {
+    .static-results {
+        gap: 20px;
+    }
+
+    .number-static>h3 {
+        font-size: 54px;
+    }
+
+    .price-title>h3 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .price-title>p {
+        font-size: 22px;
+    }
+
+    .price-title>h2 {
+        font-size: 80px;
+    }
+}
+
+@media(max-width:780px) {
+    .burger {
+        display: flex;
+    }
+
+    .header-menu {
+        display: none;
+    }
+
+    .header-number {
+        display: none;
+    }
+
+    .hero-text>h1 {
+        font-size: 51px;
+        margin-bottom: 25px;
+        line-height: 1;
+    }
+
+    .hero-text>p {
+        font-size: 14px;
+        line-height: 1.2;
+        padding-bottom: 20px;
+    }
+
+    .hero-text>h1>br {
+        display: none;
+    }
+
+    .hero-text>button {
+        width: 215px;
+        height: 54px;
+    }
+
+    .hero-text>button>p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .hero-text>button>img {
+        width: 30px;
+        height: 38px;
+    }
+
+    .name>input {
+        width: 200px;
+    }
+
+    .about-club-card>b {
+        font-size: 80px;
+    }
+
+    .about-club-card>p {
+        font-size: 13px;
+    }
+
+    .course-card {
+        flex-direction: column;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .course-card1>p {
+        text-align: center;
+    }
+
+    .course-card1>img {
+        margin: 0 auto;
+    }
+
+    .course-card>img {
+        transform: rotate(90deg);
+    }
+}
+
+@media(max-width:757px) {
+    .requirement-wrapper {
+        width: 100%;
+    }
+
+    .requirement-card {
+        max-width: 100%;
+    }
+
+    .card2 {
+        width: 100%;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+@media(max-width:730px) {
+    .plan-card>h3 {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    .plan-card {
+        height: 100%;
+        padding: 40px 30px;
+    }
+
+    .planimg {
+        width: 121px;
+        height: 124px;
+        right: -29px;
+    }
+}
+
+@media(max-width:700px) {
+    .hero-menu-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .hero-menu-card {
+        max-width: 330px;
+    }
+
+    .hero-menu-card>p {
+        font-size: 18px;
+    }
+
+    .sign-up-title>p {
+        font-size: 27px;
+    }
+
+    .sign-up-form {
+        width: 100%;
+        flex-direction: column;
+        align-items: start;
+        padding: 0 20px;
+    }
+
+    .sign-up-form>button {
+        gap: 10px;
+    }
+
+    .sign-up-form>button>p {
+        font-size: 15px;
+    }
+
+    .name {
+        width: 100%;
+    }
+
+    .name>input {
+        width: 100%;
+
+    }
+    .faq-title > h2{
+        font-size: 28px;
+    }
+    .faq-title > h3{
+        font-size: 28px;
+    }
+}
+
+
+@media(max-width:600px) {
+    .service-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media(max-width:535px) {
+    .price-title {
+        color: red;
+        max-width: 300px;
+    }
+}
+@media(max-width:470px){
+    .faq-info{
+        padding: 30px;
+    }
+    .info-card > h4{
+        font-size: 15px;
+    }
+}
+@media(max-width:412px) {
+    .static-results {
+        justify-content: center;
+        align-items: center;
+    }
+    .info-card > h4{
+        font-size: 13px;
+    }
 }
