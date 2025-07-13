@@ -1032,7 +1032,12 @@ body {
         padding: 0 20px;
     }
 }
-
+@media(max-width:1070px){
+    .price-title>img {
+        max-width: 1042px;
+        width: 100%;
+    }
+}
 @media(max-width:1005px) {
     .price-month {
         display: flex;
